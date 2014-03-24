@@ -105,7 +105,8 @@ ls
 diff case_sensitive.txt case_insensitive.txt
 
 cd
-wget Cache.tar.gz
+wget --no-check-certificate http://github.com/vpavlenko/linux-task/blob/master/Cache.tar.gz?raw=true
+mv Cache.tar.gz\?raw\=true Cache.tar.gz
 tar xvf Cache.tar.gz
 cd Cache
 ls
@@ -151,8 +152,10 @@ ps aux | grep less
 Разное
 ------
 
-1. (`wget`) Выкачайте все страницы книжки http://www.tldp.org/LDP/Bash-Beginners-Guide/html/
-Пожалуйста, не выкачайте при этом весь интернет.
+1. `wget`: Выкачайте все страницы книжки http://www.tldp.org/LDP/Bash-Beginners-Guide/html/
+Пожалуйста, не выкачайте заодно весь интернет.
+Прочитайте `man wget` или узнайте у Гугла, как это сделать.
+
 
 2. Найдите в архиве Cache.tar.gz все картинки и переложите их в отдельную папку.
 
